@@ -4,14 +4,16 @@ using GraphAPI.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace GraphAPI.Migrations
 {
     [DbContext(typeof(GraphDbContext))]
-    partial class GraphDbContextModelSnapshot : ModelSnapshot
+    [Migration("20190430121749_iit")]
+    partial class iit
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

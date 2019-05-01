@@ -6,7 +6,38 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="GraphQL\GraphFace\**" />
+    <Compile Remove="GraphQL\GraphOwner\**" />
+    <Compile Remove="GraphQL\GraphPlate\**" />
+    <Compile Remove="GraphQL\Queries\**" />
+    <Compile Remove="Mutations\**" />
+    <Content Remove="GraphQL\GraphFace\**" />
+    <Content Remove="GraphQL\GraphOwner\**" />
+    <Content Remove="GraphQL\GraphPlate\**" />
+    <Content Remove="GraphQL\Queries\**" />
+    <Content Remove="Mutations\**" />
+    <EmbeddedResource Remove="GraphQL\GraphFace\**" />
+    <EmbeddedResource Remove="GraphQL\GraphOwner\**" />
+    <EmbeddedResource Remove="GraphQL\GraphPlate\**" />
+    <EmbeddedResource Remove="GraphQL\Queries\**" />
+    <EmbeddedResource Remove="Mutations\**" />
+    <None Remove="GraphQL\GraphFace\**" />
+    <None Remove="GraphQL\GraphOwner\**" />
+    <None Remove="GraphQL\GraphPlate\**" />
+    <None Remove="GraphQL\Queries\**" />
+    <None Remove="Mutations\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Remove="Controllers\PlatesController.cs" />
+    <Compile Remove="Models\Face.cs" />
+    <Compile Remove="Models\Owner.cs" />
+    <Compile Remove="Models\plate.cs" />
+    <Compile Remove="Repository\Implements\FaceManager.cs" />
+    <Compile Remove="Repository\Implements\OwnerManager.cs" />
+    <Compile Remove="Repository\Implements\PlateManager.cs" />
+    <Compile Remove="Repository\Interfaces\IDataRepository.cs" />
+    <Compile Remove="Repository\Interfaces\IPlateRepository.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -15,6 +46,7 @@
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
+    <PackageReference Include="Toolbelt.EntityFrameworkCore.IndexAttribute" Version="2.0.0" />
   </ItemGroup>
 
 </Project>
